@@ -181,9 +181,8 @@ else if(insurance>=100000) {
 // finalOutput= PAYE(salary)-NSSF(deduction)-NHIF(insurance)
 
 // giving the final output
-finalOutput= netSalary(inputSalary)
 
-// finalOutput = inputSalary-PAYE(inputSalary)-(NHIF(inputSalary));
+finalOutput = inputSalary-PAYE(inputSalary)-(NHIF(inputSalary));
 document.getElementById('salary-id').append(finalOutput)
         
 })
